@@ -1,14 +1,16 @@
-import static java.lang.Runtime.getRuntime;
+import Service.ClientService;
 
 /**
  * Created by pintokha on 01.03.2017.
  */
 public class Main {
     public static void main(String[] args) {
-        System.out.println("teasdst");
+        //fill multiple database clients
+        ClientService qwerty = new ClientService();
+        qwerty.clientFilling();
         while (true) {
-            Menu m = new Menu();
-            m.HomeMenu();
+            Menu start = new Menu();
+            start.HomeMenu();
         }
     }
 }

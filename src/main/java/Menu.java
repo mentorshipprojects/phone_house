@@ -1,3 +1,4 @@
+import Service.ProductService;
 import domain.NewPurchase;
 import java.util.Scanner;
 
@@ -12,12 +13,12 @@ class Menu {
 
         Scanner menuSelection = new Scanner(System.in);
         System.out.print("Select operation: ");
-        int test = menuSelection.nextByte();
+        byte choice = menuSelection.nextByte();
 
-        switch (test){
+        switch (choice){
             case 1:
-                NewPurchase purchase = new NewPurchase();
-                purchase.Manufacturer();
+                ProductService purchase = new ProductService();
+                purchase.ChoiceManufacturer();
                 break;
             case 2:
                 System.out.println("...");
