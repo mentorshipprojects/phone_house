@@ -1,9 +1,7 @@
-import Service.ClientService;
+import domain.Menu;
+import service.ClientService;
 
-/**
- * Created by pintokha on 01.03.2017.
- */
-public class Main {
+public class Launcher {
     public static void main(String[] args) {
         //fill multiple database clients
         ClientService qwerty = new ClientService();

@@ -1,9 +1,11 @@
-import Service.ProductService;
+package domain;
+
+import service.ProductService;
 import domain.NewPurchase;
 import java.util.Scanner;
 
-class Menu {
-    void HomeMenu(){
+public class Menu {
+    public void HomeMenu(){
 
         System.out.println("=== Phone House ===");
         System.out.println("| 1 - New purchase ");
